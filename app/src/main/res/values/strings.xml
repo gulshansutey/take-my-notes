@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TakeMyNotes</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="take_my_notes_title">Take My Notes</string>
 </resources>
