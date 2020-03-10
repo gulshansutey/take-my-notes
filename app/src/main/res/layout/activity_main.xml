@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -9,6 +9,7 @@
         <variable
             name="viewModel"
             type="com.gulshansutey.takemynotes.viewmodels.MainActivityViewModel" />
+
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -28,8 +29,8 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:gravity="center"
-            app:contentInsetStartWithNavigation="0dp"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+            bind:contentInsetStartWithNavigation="0dp"
+            bind:popupTheme="@style/AppTheme.PopupOverlay">
 
             <include layout="@layout/layout_toolbar" />
         </androidx.appcompat.widget.Toolbar>
@@ -46,7 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_note_add_white_36dp" />
+        android:onClick="onFabClick"
+        bind:srcCompat="@drawable/ic_note_add_white_36dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
